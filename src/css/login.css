@@ -1,0 +1,59 @@
+.card {
+    background: rgba(14, 29, 52, 0.9);
+    padding: 15px 0;
+    box-shadow: 0px 2px 20px rgba(14, 29, 52, 0.1);
+
+}
+
+.login-main{
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* animation: fadeIn 0.5s; */
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+}
+
+
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+}
+
+.myButton{
+    width: 300px;
+}
+
+.myIcon{
+    border-radius: 0;
+    height: 22px;
+}
+
+
+

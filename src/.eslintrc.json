@@ -1,0 +1,45 @@
+{
+    "extends": [
+        "eslint:recommended", // dont use variables that has not been declared yet
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:jsx-a11y/recommended",
+        "prettier"
+    ],
+    "rules":{
+        "react/prop-types": 0,
+        "react/react-in-jsx-scope": 0
+    },
+    "plugins": [
+        "react",
+        "import",
+        "react-hooks",
+        "jsx-a11y",
+        "prettier"
+    ],
+    "parserOptions": {
+        // ecmaVersion tells about the lastest syntax
+        "ecmaVersion": 2022,
+        // sourceType tells about the type of the file or we can do import and export
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    // env ignores the error of the browser node etc. like if i use fetch which is a browser function it will not give me a js error same as with node like __dirname.
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    }
+}
